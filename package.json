@@ -1,0 +1,19 @@
+{
+  "name": "se3040_lab3_it23186088",
+  "version": "1.0.0",
+  "description": "SE3040 Application Frameworks Lab 03",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archala23186088/SE3040_Lab3_IT23186088.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archala23186088/SE3040_Lab3_IT23186088/issues"
+  },
+  "homepage": "https://github.com/archala23186088/SE3040_Lab3_IT23186088#readme"
+}
