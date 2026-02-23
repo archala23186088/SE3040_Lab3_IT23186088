@@ -1,8 +1,11 @@
-const http = require('http');
+const EventEmitter = require('events');
 
-http.createServer(function (req, res) {
-  res.write('Hello World!');
-  res.end();
-}).listen(8080);
+const eventEmitter = new EventEmitter();
 
-console.log('Server running at http://localhost:8080/');
+// Create event listener
+eventEmitter.on('greet', (name) => {
+    console.log(`Hello ${name}, welcome to SE3040 Lab 03!`);
+});
+
+// Trigger event
+eventEmitter.emit('greet', 'Archala');
