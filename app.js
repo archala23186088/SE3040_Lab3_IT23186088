@@ -1,6 +1,8 @@
-const fs = require('fs');
+const http = require('http');
 
-fs.writeFile('file.txt', 'Hello World!', function (err) {
-  if (err) throw err;
-  console.log('File saved!');
-});
+http.createServer(function (req, res) {
+  res.write('Hello World!');
+  res.end();
+}).listen(8080);
+
+console.log('Server running at http://localhost:8080/');
